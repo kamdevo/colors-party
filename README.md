@@ -7,7 +7,7 @@ Lleva tu Fiesta de Colores al siguiente nivel completando estas tareas adicional
 
 # Agrega música:
 
-Haz que la fiesta cobre vida con sonidos. Cada vez que un usuario seleccione un color, reproduce un sonido divertido (puedes usar archivos .mp3 como aplausos, campanas, u otros efectos temáticos).
+✅Haz que la fiesta cobre vida con sonidos. Cada vez que un usuario seleccione un color, reproduce un sonido divertido (puedes usar archivos .mp3 como aplausos, campanas, u otros efectos temáticos).
 
 # Sistema de votos:
 
