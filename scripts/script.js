@@ -59,8 +59,6 @@ function clickActions(color) {
 
   colorItemName.innerHTML = maxColor.name + " con ";
   colorItemCount.innerHTML = maxColor.count + " voto(s) ";
-
-  checkInactivity();
 }
 
 let inactivityTimeOut;
@@ -106,3 +104,6 @@ function checkCountScore() {
     Colors[0]
   );
 }
+
+document.addEventListener("mousemove", checkInactivity);
+document.addEventListener("keydown", checkInactivity);
