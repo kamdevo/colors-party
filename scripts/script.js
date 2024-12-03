@@ -32,11 +32,11 @@ addColor.addEventListener("click", addNewColor);
 
 resetPartyBtn.addEventListener("click", resetParty);
 
-const initialColorsRender = Colors.slice(0, 5).map((color) => {
+const initialColorsRender = initialColors.map((color) => {
   return `<div onClick="clickActions(id)" id="${color.name}" class="color ${color.name}" style="background-color: ${color.hex}"></div>`;
 });
 
-const extraColorsRender = Colors.slice(5, 14).map((color) => {
+const extraColorsRender = extraColors.map((color) => {
   return `<div onClick="clickActions(id)" id="${color.name}" class="dynamic-color color ${color.name}" style="background-color: ${color.hex}"></div>`;
 });
 
@@ -47,13 +47,14 @@ function clickActions(color) {
   const colorDiv = document.getElementById(color);
   const bgColor = getComputedStyle(colorDiv).backgroundColor;
   title.style.color = bgColor;
+
   const colorObj =
     initialColors.find((c) => c.name === color) ||
     extraColors.find((c) => c.name === color);
+
   if (colorObj) {
     colorObj.count++;
   }
-  console.log(colorObj);
 
   const maxColor = checkCountScore();
 
