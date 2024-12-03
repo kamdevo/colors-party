@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fiesta de colores by kam</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="gradient gradient-1"></div>
+      <div class="gradient gradient-2"></div>
+      <div class="gradient gradient-3"></div>
+    </div>
+    <aside class="colors-ranking">
+      <h2>Color más popular</h2>
+      <ul class="colors-list">
+        <li class="color-item">
+          <span class="color-name"></span>
+          <span class="color-count"></span>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <h1 class="title">🎨¡BIENVENIDO A LA FIESTA DE COLORES!</h1>
+      <div class="btn-group">
+        <button id="addTooltip" class="btn add-color-btn">
+          <i class='bx bx-plus ' ></i></i>
+        </button>
+        <button id="resetTooltip" class="btn reset-party-btn">
+          <i class='bx bx-reset ' ></i>
+        </button>
+      </div>
+      <p>Vota por el color que quieras las veces que quieras 🎉</p>
+      <div class="colors-grid"></div>
+    </main>
+    <dialog class="warning-modal">
+      <h2>¡Juego reiniciado por inactividad de 10 segundos!</h2>
+    </dialog>
+
+  <script src="scripts/script.js"></script>
+  </body>
+</html>
